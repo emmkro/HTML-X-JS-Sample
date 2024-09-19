@@ -4,9 +4,9 @@ const textField0 = document.getElementById("text0");
 
 // Buttons
 const increaseScoreButton= document.getElementById("button0");
+
 //internal Variables
 let score = 0;
-
 
 //process (what s going to happen in what sequence?)
 increaseScoreButton.addEventListener("click", ()  => {
