@@ -1,11 +1,23 @@
+// Document Elements
 
 const textField0 = document.getElementById("text0");
-textField0.innerHTML = showStylizedscore(786);
+//textField0.innerHTML = showStylizedscore(786);
 
-function showScore(inputNumber){
-  return inputNumber * 100; //output is a number.
+//internal Variables
+let score = 0;
+
+//process (what s going to happen in what sequence?)
+
+// Controllers
+function increaseScoreByOne (){
+  score++;
+  showScore(score);
+  updateScoreText(score);
 }
 
-function showStylizedscore(scoreInput){
-  return "Your score is:" + scoreInput* 100;
+//view
+function updateScoreText(newText){
+  textField0.innerHTML = newText;
+}
+function updateStatustext(newText){
 }
